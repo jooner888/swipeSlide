@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>移动端单张图无限滚动</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/slide.css">
+</head>
+<body>
+
+<div class="slide">
+    <div class="slide-box">
+        <ul class="slide-ul">
+            <li><a href="" title="1111"><img src="images/1.jpg"></a></li>
+            <li><a href="" title="2222"><img src="images/2.jpg"></a></li>
+            <li><a href="" title="33333"><img src="images/3.jpg"></a></li>
+            <li><a href="" title="44444"><img src="images/4.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="slide1">
+    <div class="slide-box">
+        <ul class="slide-ul">
+            <li><a href="" title="1111"><img src="images/1.jpg"></a></li>
+            <li><a href="" title="2222"><img src="images/2.jpg"></a></li>
+            <li><a href="" title="33333"><img src="images/3.jpg"></a></li>
+            <li><a href="" title="44444"><img src="images/4.jpg"></a></li>
+            <li><a href="" title="55555"><img src="images/5.jpg"></a></li>
+        </ul>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/slide.min.js"></script>
+<script>
+$(function(){
+    $(".slide").swipeSlide({index:0});
+	
+	$(".slide1").swipeSlide({
+	    auto:false,
+		isTit:false,
+		index:2
+	});
+})
+
+</script>
+</body>
+</html>
